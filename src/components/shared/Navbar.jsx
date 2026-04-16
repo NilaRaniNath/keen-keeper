@@ -1,21 +1,22 @@
 import { FaHome, FaHistory, FaChartBar } from "react-icons/fa";
 import { NavLink } from "react-router";
+import MyNavLink from "./MyNavLink";
 
 const Navbar = () => {
   return (
     <div className="navbar bg-base-100 px-4 md:px-12 py-4 border-b border-gray-100 shadow-sm">
-      {/* Brand Name/Logo */}
+    
       <div className="flex-1">
         <h1 className="text-2xl font-extrabold text-[#1a2e2a]">
           Keen<span className="text-[#2d4f48]">Keeper</span>
         </h1>
       </div>
 
-      {/* Navigation Links */}
+     
       <div className="flex-none">
         <ul className="menu menu-horizontal p-0 gap-2 font-medium">
           <li>
-            <NavLink
+            {/* <NavLink
               to="/"
               className={({ isActive }) =>
                 `flex items-center gap-2 px-6 py-2 rounded-lg transition-all ${
@@ -27,11 +28,13 @@ const Navbar = () => {
             >
               <FaHome/>
               <span>Home</span>
-            </NavLink>
+            </NavLink> */}
+
+            <MyNavLink to={"/"}> <FaHome/>Home</MyNavLink>
           </li>
           
           <li>
-            <NavLink
+            {/* <NavLink
               to="/timeline"
               className={({ isActive }) =>
                 `flex items-center gap-2 px-6 py-2 rounded-lg transition-all ${
@@ -43,11 +46,12 @@ const Navbar = () => {
             >
               <FaHistory/>
               <span>Timeline</span>
-            </NavLink>
+            </NavLink> */}
+            <MyNavLink to={"/timeline"}><FaHistory/>Timeline</MyNavLink>
           </li>
 
           <li>
-            <NavLink
+            {/* <NavLink
               to="/stats"
               className={({ isActive }) =>
                 `flex items-center gap-2 px-6 py-2 rounded-lg transition-all ${
@@ -59,7 +63,9 @@ const Navbar = () => {
             >
               <FaChartBar/>
               <span>Stats</span>
-            </NavLink>
+            </NavLink> */}
+             <MyNavLink to={"/stats"}><FaChartBar/>Stats</MyNavLink>
+
           </li>
         </ul>
       </div>

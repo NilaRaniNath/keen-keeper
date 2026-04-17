@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "Ariful Islam",
-    "picture": "https://i.ibb.co/LzNfXjM/friend1.jpg",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "ariful.dev@gmail.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -14,7 +14,7 @@
   {
     "id": 2,
     "name": "Sarah Ahmed",
-    "picture": "https://i.ibb.co/vY6ZqK9/friend2.jpg",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "sarah.arts@yahoo.com",
     "days_since_contact": 2,
     "status": "on-track",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Tanvir Rahman",
-    "picture": "https://i.ibb.co/mS6p3P2/friend3.jpg",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "tanvir.travels@outlook.com",
     "days_since_contact": 12,
     "status": "almost due",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Nusrat Jahan",
-    "picture": "https://i.ibb.co/R0G9s9q/friend4.jpg",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "nusrat.j@gmail.com",
     "days_since_contact": 45,
     "status": "overdue",
@@ -50,7 +50,7 @@
   {
     "id": 5,
     "name": "Rakib Hossain",
-    "picture": "https://i.ibb.co/T4X4k7d/friend5.jpg",
+    "picture": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "rakib.sports@gmail.com",
     "days_since_contact": 5,
     "status": "on-track",
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Priya Das",
-    "picture": "https://i.ibb.co/G3X6s8B/friend6.jpg",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "priya.das@live.com",
     "days_since_contact": 8,
     "status": "almost due",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "Mahmudul Hasan",
-    "picture": "https://i.ibb.co/pL8M7w2/friend7.jpg",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "mahmud.tech@company.com",
     "days_since_contact": 60,
     "status": "overdue",
@@ -86,7 +86,7 @@
   {
     "id": 8,
     "name": "Zarin Subah",
-    "picture": "https://i.ibb.co/kX8Y7m1/friend8.jpg",
+    "picture": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=200&h=200&auto=format&fit=crop",
     "email": "zarin.read@gmail.com",
     "days_since_contact": 3,
     "status": "on-track",

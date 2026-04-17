@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 const FriendCard = ({ friend }) => {
   const { name, picture, days_since_contact, tags, status } = friend;
  
@@ -16,7 +17,8 @@ const FriendCard = ({ friend }) => {
   };
 
   return (
-    <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col items-center text-center max-w-70 w-full hover:shadow-md transition-shadow">
+   <Link to={`/${friend.id}`}
+      className="bg-white rounded-2xl shadow-sm border border-gray-100 p-8 flex flex-col items-center text-center max-w-70 w-full hover:shadow-md transition-shadow">
       
      
       <div className="avatar mb-4">
@@ -50,7 +52,8 @@ const FriendCard = ({ friend }) => {
         {status}
       </div>
       
-    </div>
+    
+   </Link>
   );
 };
 

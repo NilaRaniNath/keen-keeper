@@ -1,27 +1,49 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import { useParams } from 'react-router';
 import useFriend from '../../hooks/useFriend';
 import { RingLoader } from 'react-spinners';
 import { MdEdit } from 'react-icons/md';
 import { FaArchive, FaHistory, FaPhoneAlt, FaRegEnvelope, FaTrashAlt, FaVideo } from 'react-icons/fa';
+import { TimelineContext } from '../../components/context/TimelineContext';
 
 const FriendDetails = () => {
     const { id } =useParams();
     const {frnds , loading}=useFriend();
     const expectedFrnd = frnds.find((frnd) => String(frnd.id) === id );
-    console.log(id ,expectedFrnd );
+    // console.log(id ,expectedFrnd );
+
+
+// const [call, setCall] = useState([]);
+// const [text, setText] = useState([]);
+// const [video, setVideo] =useState([]);
+const {timeline, setTimeline} = useContext(TimelineContext)
+
+
 
     if(loading) {
         <div className='flex justify-center items-center'>
                 <RingLoader />
                 </div>
-    }
+    };
+
+// const handleCallBtn = () => {
+//     setCall([...call,expectedFrnd])
+// };
+// const handleTextBtn = () => {
+//     setText([...text,expectedFrnd])
+// };
+// const handleVideoBtn = () =>{
+//     setVideo([...video,expectedFrnd])
+// };
+
+const handleBtn = (type) => {
+     const newExpectedFriend = { ...expectedFrnd, type: type };
+    // console.log(newExpectedFriend);
+    setTimeline([...timeline, newExpectedFriend]);
+}
 
     return (
         <div className='container mx-auto'>
-
-
-
 
             <div className="max-w-6xl mx-auto p-6 bg-[#f8fafc] min-h-screen">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
@@ -89,15 +111,15 @@ const FriendDetails = () => {
           <div className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm">
             <h4 className="font-bold text-gray-700 mb-4">Quick Check-In</h4>
             <div className="grid grid-cols-3 gap-4">
-              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all" onClick={() => handleBtn("call")}>
                 <FaPhoneAlt className="text-xl text-gray-600 mb-2" />
                 <span className="text-sm font-medium">Call</span>
               </button>
-              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all" onClick={() => handleBtn("text")}>
                 <FaRegEnvelope className="text-xl text-gray-600 mb-2" />
                 <span className="text-sm font-medium">Text</span>
               </button>
-              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all">
+              <button className="flex flex-col items-center justify-center p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-all" onClick={() => handleBtn("video")}>
                 <FaVideo className="text-xl text-gray-600 mb-2" />
                 <span className="text-sm font-medium">Video</span>
               </button>

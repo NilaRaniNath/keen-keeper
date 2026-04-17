@@ -16,7 +16,7 @@ const Navbar = () => {
 
      
       <div className="flex-none">
-        <ul className="menu menu-horizontal p-0 gap-2 font-medium">
+        <ul className="menu menu-horizontal p-0 gap-0 md:gap-2 font-medium">
          
           <li>
             <MyNavLink to={"/"}> <FaHome/>Home</MyNavLink>

@@ -1,5 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { TimelineContext } from '../../components/context/TimelineContext';
+import {CallImg} from '../../assets/call.png';
+import {textImg} from "../../assets/text.png";
+import {vdieoImg} from '../../assets/video.png'
 
 
 
@@ -9,9 +12,9 @@ const Timeline = () => {
 
   const getIcon = (type) => {
     switch (type?.toLowerCase()) {
-      case "call": return <img src='/public/call.png' className="text-gray-600" />;
-      case "text": return <img src='/public/text.png' className="text-gray-600" />;
-      case "video": return <img src ='/public/video.png' className="text-gray-600" />;
+      case "call": return <img src={CallImg} className="text-gray-600" />;
+      case "text": return <img src={textImg} className="text-gray-600" />;
+      case "video": return <img src ={vdieoImg} className="text-gray-600" />;
      
     }
   };

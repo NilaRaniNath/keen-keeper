@@ -4,7 +4,7 @@ const useFriend = () => {
      const [frnds, setFrnds] = useState([]);
      const [ loading, setLoading] =useState(true);
      useEffect(() => {
-    fetch("/public/data.json") 
+    fetch("/data.json") 
       .then((res) => res.json())
       .then((data) => setFrnds(data));
     setLoading(false);

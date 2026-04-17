@@ -15,9 +15,9 @@ const Stats = () => {
 
   const data = isEmpty
     ? [
-        { name: "Text", value: 1, realValue: 0 },
-        { name: "Call", value: 1, realValue: 0 },
-        { name: "Video", value: 1, realValue: 0 },
+        { name: "Text", value: 0, realValue: 0 },
+        { name: "Call", value: 0, realValue: 0 },
+        { name: "Video", value: 0, realValue: 0 },
       ]
     : [
         { name: "Text", value: totalText, realValue: totalText },

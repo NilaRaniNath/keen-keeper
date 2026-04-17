@@ -5,7 +5,7 @@ import { FaArrowLeft, FaExclamationTriangle } from "react-icons/fa";
 const NotFoundPage = () => {
   return (
     <div className="min-h-[80vh] flex flex-col items-center justify-center px-4 text-center">
-      {/* Visual Element */}
+     
       <div className="relative mb-8">
         <h1 className="text-9xl font-extrabold text-slate-200 select-none">
           404
@@ -15,7 +15,7 @@ const NotFoundPage = () => {
         </div>
       </div>
 
-      {/* Text Content */}
+     
       <h2 className="text-3xl font-bold text-gray-800 mb-4">
         Oops! Page Not Found
       </h2>
@@ -23,7 +23,6 @@ const NotFoundPage = () => {
         Tumi jeta khujcho sheti hoyto onno kothao soraye fela hoyeche othoba link-ti bhul. Ekbar check kore dekhte paro!
       </p>
 
-      {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4">
         <Link 
           to="/" 
@@ -41,7 +40,7 @@ const NotFoundPage = () => {
         </button>
       </div>
 
-      {/* Fun Element (Optional) */}
+    
       <div className="mt-12">
         <div className="badge badge-ghost p-4 text-slate-400">
           Lost in Space? 🚀

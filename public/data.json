@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ariful Islam",
+    "picture": "https://i.ibb.co/LzNfXjM/friend1.jpg",
+    "email": "ariful.dev@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["university", "coding-partner"],
+    "bio": "Competitive programming partner from university. We usually talk about React and backend architecture.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Ahmed",
+    "picture": "https://i.ibb.co/vY6ZqK9/friend2.jpg",
+    "email": "sarah.arts@yahoo.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["childhood", "close friend"],
+    "bio": "Best friend since primary school. She is a graphic designer and we love discussing art and photography.",
+    "goal": 7,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 3,
+    "name": "Tanvir Rahman",
+    "picture": "https://i.ibb.co/mS6p3P2/friend3.jpg",
+    "email": "tanvir.travels@outlook.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["travel", "outdoor"],
+    "bio": "Met during a hiking trip to Sylhet. Shared interest in trekking and camping in the mountains.",
+    "goal": 15,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 4,
+    "name": "Nusrat Jahan",
+    "picture": "https://i.ibb.co/R0G9s9q/friend4.jpg",
+    "email": "nusrat.j@gmail.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": ["college", "mentor"],
+    "bio": "Senior from college who guided me through web development. Very busy professional but always helpful.",
+    "goal": 30,
+    "next_due_date": "2026-03-02"
+  },
+  {
+    "id": 5,
+    "name": "Rakib Hossain",
+    "picture": "https://i.ibb.co/T4X4k7d/friend5.jpg",
+    "email": "rakib.sports@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gym", "fitness"],
+    "bio": "Gym buddy. We push each other to stay consistent with our workout routines and healthy diet.",
+    "goal": 10,
+    "next_due_date": "2026-04-21"
+  },
+  {
+    "id": 6,
+    "name": "Priya Das",
+    "picture": "https://i.ibb.co/G3X6s8B/friend6.jpg",
+    "email": "priya.das@live.com",
+    "days_since_contact": 8,
+    "status": "almost due",
+    "tags": ["neighbour", "foodie"],
+    "bio": "Long-time neighbor. We often exchange recipes and try out new restaurants in the city.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 7,
+    "name": "Mahmudul Hasan",
+    "picture": "https://i.ibb.co/pL8M7w2/friend7.jpg",
+    "email": "mahmud.tech@company.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": ["work", "ex-colleague"],
+    "bio": "Former colleague from my first internship. Great mentor for career advice and industry insights.",
+    "goal": 30,
+    "next_due_date": "2026-02-15"
+  },
+  {
+    "id": 8,
+    "name": "Zarin Subah",
+    "picture": "https://i.ibb.co/kX8Y7m1/friend8.jpg",
+    "email": "zarin.read@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["book-club", "discussion"],
+    "bio": "Member of our local book club. We love debating about classic literature and modern sci-fi novels.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  }
+]

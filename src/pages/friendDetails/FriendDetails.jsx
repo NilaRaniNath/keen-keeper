@@ -5,6 +5,7 @@ import { RingLoader } from 'react-spinners';
 import { MdEdit } from 'react-icons/md';
 import { FaArchive, FaHistory, FaPhoneAlt, FaRegEnvelope, FaTrashAlt, FaVideo } from 'react-icons/fa';
 import { TimelineContext } from '../../components/context/TimelineContext';
+import { toast } from 'react-toastify';
 
 const FriendDetails = () => {
     const { id } =useParams();
@@ -13,9 +14,7 @@ const FriendDetails = () => {
     // console.log(id ,expectedFrnd );
 
 
-// const [call, setCall] = useState([]);
-// const [text, setText] = useState([]);
-// const [video, setVideo] =useState([]);
+
 const {timeline, setTimeline} = useContext(TimelineContext)
 
 
@@ -26,20 +25,18 @@ const {timeline, setTimeline} = useContext(TimelineContext)
                 </div>
     };
 
-// const handleCallBtn = () => {
-//     setCall([...call,expectedFrnd])
-// };
-// const handleTextBtn = () => {
-//     setText([...text,expectedFrnd])
-// };
-// const handleVideoBtn = () =>{
-//     setVideo([...video,expectedFrnd])
-// };
 
 const handleBtn = (type) => {
      const newExpectedFriend = { ...expectedFrnd, type: type };
     // console.log(newExpectedFriend);
     setTimeline([...timeline, newExpectedFriend]);
+     if (type === "text") {
+      toast.success("Text Added in Timeline Successfully");
+    } else if (type === "call") {
+      toast.success("Call Added in Timeline Successfully");
+    } else {
+      toast.success("Video Added in TimeLine Successfully");
+    }
 }
 
     return (
